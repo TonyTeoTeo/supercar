@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 500;
+    background-color: lightgray;
+    padding: 40px 24px;
+}
+/*-------------------Header css---------------------*/	
+header > h1{
+    font-size: 3em;
+    text-align: center;
+    color: gray;
+    text-shadow: .03em .04em lightblue;
+    animation: doimau 1s infinite;
+    font-family: "Audiowide", sans-serif;
+}
+@keyframes doimau{
+    from{
+        color: rgb(43, 231, 18)
+    }
+    to{
+        color: rgb(253, 76, 6);
+    }
+}
+/*-----------------------------------------------*/	
+
+/*-----------------SECTION CSS-------------------*/
+
+.container{
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.box-1{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+}
+h1{
+    margin-top: 50px;
+}
+.car{
+    margin-top: 10px;
+    margin-left: 20px;	
+    width: calc(25% - 20px); /*để tổng chiều rộng tính luôn margin-left không bị rớt xuống hàng*/
+    height: 250px;
+    background-color: darkgray;
+    border-radius: 10px;
+}
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    transition: transform .5s;
+}
+img:hover{
+    transform: scale(1.2);
+}
+.car-content{
+    text-align: center;
+    margin: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: rgb(102, 98, 98);
+}
+/*----------------------------------------------*/
+
+/*------------------Nav css---------------------*/
+nav{
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: darkgray;
+    max-width: 200em;
+    border-radius: 10px;
+}	
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul > li > a{
+    display: block;
+    padding: 1em 3em;
+    text-decoration: none;
+    color: rgb(117, 18, 18);
+}
+nav ul > li > a:hover{
+    background-color: brown;
+    color: white;
+    border-radius: 10px;
+}
+/*-----------------CSS SUBMENU------------------*/
+.subcontent{
+    display: none;
+    position: absolute;
+    background-color: gray;
+    width: 12em;
+    border-radius: 10px;
+}	
+.submenu:hover .subcontent{
+    display: block;
+    border-radius: 10px;
+}
+/*----------------------------------------------*/
+
+/*-----------------Footer css-------------------*/	
+body{
+    max-height: 700px;
+}
+.top-footer{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+footer{
+    font-family: Arial, Helvetica, sans-seri;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 2em;
+    height: 550px;
+}
+.info-1{
+    list-style-type: none;
+    margin: left;
+}
+.info-2{
+    list-style-type: none;	
+}
+h2{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}	
+footer > p{
+    color: white;
+    text-align: center;
+}
+hr{
+    margin: 20px auto;
+}
+.col-container{
+    width: 50%;
+    display: flex;
+    margin-top: 15px;
+}
+.col251{
+    width: 50%;
+    margin: left;
+    margin-right: 20px;
+    color: white;		
+}
+.col252{
+    width: 50%;
+    margin: right;
+}
+.col50{
+    width: 50%;
+    height: 50em;	
+    margin-right: 0px;	
+}
+.contact-container{
+    display: flex;
+    
+}
+.msg{
+    padding: 1em;
+    width: 100%;
+}
+input[type=text]{
+    width: 100%;
+    padding: .7em;
+}
+textarea{
+    width: 100%;
+    height: 5em; 
+    padding: .8em;
+}
+input[type=submit]{
+    background-color: orange;
+    color: white;
+    padding: .5em;
+    border: 0;
+}
+.tr-last{
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 768px){
+    nav{
+        width: 100%;
+    }
+    nav ul{
+        justify-content: center;
+        /* margin: 0 5px; */
+    }
+    nav ul > li > a{
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    }
+    .icon1{
+        margin-right: 15px;
+    }
+    .icon2{
+        margin-left: 15px;
+    }
+    .header1{
+    font-size: 20px;
+
+    }
+    .subcontent{
+    display: none;
+    position: absolute;
+    background-color: gray;
+    width: 6em;
+    font-size: 15px;
+}	
+    .submenu:hover .subcontent{
+    display: block;
+    font-size: 15px;
+}
+
+    .container{
+        /* width: 100%; */
+        display: block;
+    }
+    div.car{
+    width: 90%;
+    height: 90%;
+    background-color: gray;
+    /* padding: 0.3em;	 */
+    border-radius: 0.3em;	
+    /* margin: .5em; */
+    object-fit: fill;
+    text-align: center;
+}
+
+.contact-container{
+    display: block;
+}
+.col-container{
+    display: flex;
+    width: 100%;
+}
+.col251{
+    width: 50%;
+    margin: auto;
+    color: white;		
+}
+.col252{
+    width: 50%;
+    text-align: left;
+}
+.col50{
+    width: 100%;
+    height: 50em;		
+
+}
+/* img{
+    width: 75%;
+    height: 75%;
+} */
+.container{
+    text-align: center;
+    align-items: center;
+    margin-left: 4%;
+}
+}
